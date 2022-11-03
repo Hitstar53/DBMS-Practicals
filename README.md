@@ -11,8 +11,8 @@ Contains Sql script files of case study made on Hospital Management Database dur
 7. Select the database name u want to connect with and then click save connection
 8. Upon trying to connect to the saved connection you should encounter an AUTH Error
 9. Open command line client of mysql and type the following commands below:
-10. ``
-11. ``
+10. `CREATE USER 'sqluser'@'%' IDENTIFIED WITH mysql_native_password BY 'password';`
+11. `GRANT ALL PRIVILEGES ON . TO 'sqluser'@'%';`
 12. `FLUSH PRIVILEGES;`
 13. Exit the terminal and go to vscode and click "edit connection"
 14. change user name to "sqluser" & password to "password"
