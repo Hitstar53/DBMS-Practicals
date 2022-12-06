@@ -2,7 +2,7 @@
 INSERT INTO doctor VALUES(10,"Dhruv",5672356257,50000,"Neurologist","Andheri");
 INSERT INTO doctor VALUES(11,"Kaif",9348569346,100000,"dentist","Colaba");
 INSERT INTO doctor VALUES(12,"Virinchi",9348569346,100000,"dentist","Bhayandar");
-
+INSERT INTO patient VALUES(10,"Husain",21,"Marol",1234567890,4);
 -- @BLOCK
 UPDATE doctor SET Salary=400000 WHERE D_id=11;
 UPDATE doctor SET Address="Marol" WHERE D_id=4;
@@ -12,8 +12,6 @@ UPDATE doctor SET Address="Marol" WHERE D_id=5;
 UPDATE doctor SET Address="Colaba" WHERE D_id=7;
 UPDATE doctor SET Address="Colaba" WHERE D_id=8;
 UPDATE doctor SET Address="Bhayandar" WHERE D_id=10;
--- @BLOCK
-INSERT INTO patient VALUES(10,"Husain",21,"Marol",1234567890,4);
 -- @BLOCK
 SELECT MIN(Salary) AS "Least-Salary" FROM doctor WHERE D_id<5;
 -- @BLOCK

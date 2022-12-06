@@ -1,3 +1,4 @@
+-- @block Not Normalized
 CREATE TABLE hospital (
     P_id int primary key,
     Pname varchar(30) NOT NULL,
