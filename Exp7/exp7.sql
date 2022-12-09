@@ -1,5 +1,5 @@
 -- @BLOCK view creation
-CREATE VIEW patient_ages AS 
+CREATE VIEW patient_ages AS
 SELECT P_id,Pname,Age 
 FROM patient;
 -- @BLOCK

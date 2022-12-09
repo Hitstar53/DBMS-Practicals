@@ -23,7 +23,7 @@ SELECT MIN(Age) AS "Youngest Patient from Marol" FROM patient WHERE Address="Mar
 -- @BLOCK
 SELECT Address,AVG(Salary) AS "Average" FROM doctor GROUP BY Address;
 -- @BLOCK
-SELECT * FROM (SELECT Field,SUM(Salary) AS "Total" FROM doctor GROUP BY Field) AS Employee WHERE Total>400000;
+SELECT * FROM (SELECT Field,SUM(Salary) AS "Total" FROM doctor GROUP BY Field) AS Employee WHERE Total>400000 ORDER BY Total;
 -- @BLOCK
 SELECT * FROM (SELECT Address,SUM(Salary) AS "Total" FROM doctor GROUP BY Address) AS Employee WHERE Total>40000;
 -- @BLOCK
